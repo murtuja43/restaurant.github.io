@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title" class="slideIn">Take a quick survey</h1>
+  <p id="description">Thank you for your time taking this survey</p>
+
+  <form action="https://api.web3forms.com/submit" method="POST" id="survey-form">
+  <div class="content">
+
+            <div class="main_left">
+              <section class="one">
+              <input type="hidden" name="access_key" value="18fbafad-dd73-4b0a-98d7-7198f9befdcd">
+                <input type="text" id="name" class="input-section1" name="Name" placeholder="Your Name" required>
+                <input type="email" id="email" class="input-section1" name="Email" placeholder="Email Id" required>
+                <input type="text" id="number" class="input-section1" name="Number"placeholder="Mobile num" required>
+                <hr>
+              </section>
+
+              <div class="flex">
+              <section class="two">
+                <h2>Food Quality</h2>
+                <article><input type="radio" name="radio" id="radiobtn1" value="Excellent">
+                <label for="radiobtn1">Excellent</label></article>
+                <article><input type="radio" name="radio" id="radiobtn2" value="Good">
+                <label for="radiobtn2">Good</label></article>
+                <article><input type="radio" name="radio" id="radiobtn3" value="Fair">
+                <label for="radiobtn3">Fair</label></article>
+                <article><input type="radio" name="radio" id="radiobtn4" value="Poor">
+                <label for="radiobtn4">Poor</label></article>
+                <article><input type="radio" name="radio" id="radiobtn5" value="Very Poor">
+                <label for="radiobtn5">Very Poor</label></article>
+                <hr>
+              </section>
+
+
+              <section class="three">
+                <h2>Service Quality</h2>
+                <article><input type="radio" name="radio2" id="radiobtn6" value="Excellent">
+                  <label for="radiobtn6">Excellent</label></article>
+                  <article><input type="radio" name="radio2" id="radiobtn7" value="Good">
+                  <label for="radiobtn7">Good</label></article>
+                  <article><input type="radio" name="radio2" id="radiobtn8" value="Fair">
+                  <label for="radiobtn8">Fair</label></article>
+                  <article><input type="radio" name="radio2" id="radiobtn9" value="Poor">
+                  <label for="radiobtn9">Poor</label></article>
+                  <article><input type="radio" name="radio2" id="radiobtn10" value="Very Poor">
+                  <label for="radiobtn10">Very Poor</label></article>
+                  <hr>
+              </section>
+            </div>
+         </div>
+
+                     <div class="main_right">
+                        <section class="onee">
+                          <img src="orange.png" alt="logo" class="logo1">
+                          <img src="green-orange.png" alt="logo" class="logo2">
+                        </section>
+
+                        <section class="twoo">
+                          <textarea name="Message" id="textarea" placeholder="Add your comments here"></textarea>
+                        </section>
+                      </div>
+                      <button type="submit" name="Recieved">Submit</button>
+            </div>
+          </form>
+</body>
+</html>
